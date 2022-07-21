@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Neuton:wght@300&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Neuton', serif;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+:root {
+    --main-color: #051367;
+    --white: white;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+/* navbar section */
+.navbar {
+    padding-top: 1.7rem !important;
+    padding-bottom: 1.7rem !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    position: sticky;
+}
+
+.nav-item {
+    margin: 0 1rem !important;
+}
+
+.book-a-call {
+    margin-left: 1.5rem;
+    font-size: 1.2rem !important;
+    background: var(--main-color) !important;
+    color: var(--white) !important;
+    padding: 1rem 2rem !important;
+    letter-spacing: .2rem;
+}
+
+.nav-link {
+    font-size: 1.7rem !important;
+    color: var(--main-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    color: var(--main-color) !important;
+}
+
+.fa-dumbbell {
+    font-size: 2.4rem;
+    margin-right: .2rem;
+    color: var(--main-color);
+}
+
+/* home section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 52rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background: url("img/home.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 52rem;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.hero-tag-line {
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.online-coaching {
+    display: inline !important;
+    width: 22rem !important;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+    background: var(--main-color);
+    border-radius: 7px;
+    letter-spacing: .1rem;
+}
+
+.online-coaching:hover {
+    border: 0.2rem solid var(--main-color);
+    background: transparent;
+    color: black;
+    font-weight: 300;
+}
+
+.hero-first-headline,
+.hero-second-headline {
+
+    font-size: 5.5rem !important;
+    font-style: italic;
+    color: var(--main-color);
+    margin-bottom: 1.3rem;
+}
+
+.hero-first-headline {
+    margin-top: 12rem;
+}
+
+.hero-para {
+    font-size: 1.7rem !important;
+}
+
+.btn-space {
+    margin: 0 0.2rem;
+}
+
+/* responsive home section */
+@media(min-width:768px) {
+
+    .hero-first-headline {
+        margin-top: 15rem;
+    }
+
+    .hero-first-headline,
+    .hero-second-headline {
+        font-size: 4rem;
+    }
+
+    .hero-para {
+        font-size: 1.3rem;
+    }
+
+    .online-coaching {
+        display: inline !important;
+        width: 17rem;
+    }
+
+
+}
+
+@media(max-width:600px) {
+
+    .hero-first-headline {
+        margin-top: 15rem;
+    }
+
+    .hero-first-headline,
+    .hero-second-headline {
+        font-size: 4rem !important;
+    }
+
+    .hero-para {
+        font-size: 1.3rem !important;
+    }
+
+    .online-coaching {
+        display: inline !important;
+        padding: 1rem 1rem !important;
+        font-size: 1.5rem;
+        width: 17rem !important;
+    }
+
+
+}
+
+@media(max-width: 400px)
+{
+    .hero-first-headline,
+    .hero-second-headline {
+        font-size: 3.5rem !important;
+    }
+
+
+}
+
+.fa-align-right {
+    color: rgb(39, 38, 38);
+    font-size: 3rem;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+/* free workout section start */
+.free {
+    font-size: 6rem;
+
+}
+
+.fitpara {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    margin-top: 2.6rem;
+}
+
+.view-all {
+
+    display: inline !important;
+    width: 20rem;
+    padding: .8rem 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+    background: var(--main-color);
+    border-radius: 2px;
+    letter-spacing: .1rem;
+    margin-bottom: 2.7rem;
+}
+
+.view-all:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+
+.work-img {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.fitness-box {
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+}
+
+.work-tag {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width:768px) {
+    .work-img {
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        margin: 0 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .work-tag {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media(max-width:600px) {
+    .work-img {
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .work-tag {
+        padding: 0 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .free
+    {
+        font-size: 4rem;
+    }
+
+    .fitpara
+    {
+        font-size: 1.2rem;
+    }
+
+    .title
+    {
+        font-size: 2rem;
+    }
+}
+
+.workout
+{
+    height: 35rem;
+}
+
+.weekwork
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body
+{
+    padding: 1rem 3rem;
+}
+
+.price
+{
+    color: rgb(245, 29, 29);
+    font-size: 1.6rem;
+}
+
+.week
+{
+    font-size: 1.5rem;
+}
+
+.weekwork
+{
+    margin: 1.5rem 0;
+}
+
+.title
+{
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+}
+
+.view
+{
+    font-size: 1.7rem;
+}
+
+.fa-angle-right
+{
+    margin-right: 0.4rem;
+}
+
+.achivement
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25rem;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.client, .exp, .follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-clients, .exp-total, .total-follow
+{
+    font-size: 30px;
+    line-height: 1.1em;
+    font-weight: 500;
+}
+
+.happy-clients, .ofexp, .follow-me
+{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.healthy-plan
+{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+@media(max-width:600px)
+{
+  .achivement
+  {
+      flex-direction: column;
+      height: 35rem;
+  }
+}
+
+.journey
+{
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.1em;
+    font-weight: 500;
+}
+
+
+.online-coaching-2
+{
+    display: block !important;
+    margin: 5rem auto !important;
+    width: 25rem !important;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+    background: var(--main-color);
+    border-radius: 7px;
+    letter-spacing: .1rem;
+}
+
+.health
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.fit-4
+{
+    width: 30rem;
+    height: 30rem !important;
+    border-radius: 10px;
+}
+
+.health-part-2
+{
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.hfirst
+{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.fitfirst
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media(max-width:600px)
+{
+    .journey
+    {
+        font-size: 4rem;
+    }
+
+    .online-coaching-2 {
+        display: block !important;
+        padding: 1rem 1rem !important;
+        font-size: 1.5rem;
+        width: 17rem !important;
+    }
+
+    .hea
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hfirst
+    {
+        font-size: 2.5rem;
+    }
+
+    .fitfirst
+    {
+        font-size: 1.3rem;
+    }
+
+    .health{
+        margin: 3rem 0;
+    }
+}
+/* tips tricks section start */
+
+.tips-tricks
+{
+    background-color: var(--main-color);
+    color: white;
+    padding: 5rem;
+    position: relative;
+}
+
+.tips-top
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tips-head
+{
+    font-size: 5rem;
+}
+
+.tips-para
+{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+.view-post-all
+{
+    width: 25rem !important;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    color: var(--main-color);
+    background: white;
+    border-radius: 7px;
+    letter-spacing: .1rem;
+    border: none;
+}
+
+.traning-part
+{
+    margin-top: 9rem;
+}
+
+.tricks-img
+{
+  height: 50rem;
+  border-radius: 10px;
+  
+}
+@media(max-width:600px)
+{
+    .tips-head
+    {
+        font-size: 4rem;
+    }
+}
+/* contactus section */
+
+.contactus
+{
+    position: relative;
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus::before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-image: url("/img/drink.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 70rem;
+    z-index: -1;
+    display: block;
+    
+}
+
+.contactbox
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    background-color: #B1D0E0;
+    color: black;
+    border-radius: 1rem;
+
+}
+
+.contactHead
+{
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+}
+
+.contactPara
+{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.form-field
+{
+    height: 60px;
+    margin-bottom: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 1px none #000;
+    border-radius: 6px;
+    background-color: rgba(32, 52, 146, 0.1);
+    color: #081158;
+    font-size: 16px;
+    color: black;
+
+}
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup
+{
+    display: block;
+    padding: 2rem 12rem 2rem 12rem;
+    border: 0px solid #000;
+    border-radius: 6px;
+    background-color: #081158;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.signup:hover{
+    color: white;
+}
+
+.form-field:hover
+{
+    border: none !important;
+}
+
+
+@media(max-width:768px)
+{
+    .contactPara
+    {
+        font-size: 1.5rem;
+    }
+
+    .form-field{
+        height: 53px;
+        margin-bottom: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .signup
+    {
+        padding: 1.5rem 9rem 1.5rem 9rem;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:600px)
+{
+    .contactHead
+    {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .contactPara
+    {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .form-field{
+        height: 50px;
+        margin-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 1rem 1.7rem;
+    }
+
+    .signup
+    {
+        padding: 1.5rem 8rem 1.5rem 8rem;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+/* footer section */
+.footer
+{
+    background-color: var(--main-color) !important;
+    color: white;
+    margin-top: auto;
+    padding: 5rem;
+}
+
+.footer-logo
+{
+    color: white !important;
+    font-size: 3rem !important;
+}
+
+.ul
+{
+    margin-top: 1.5rem;
+}
+
+.ul li{
+    list-style: none;
+    margin: .4rem 0;
+    font-size: 1.6rem !important;
+    
+}
+
+.contact
+{
+    font-size: 2rem !important;
+    margin-bottom: 1.7rem;
+}
+
+.Licencing
+{
+    font-size: 2rem !important;
+    margin-bottom: 1.7rem !important;
+    margin-top: 3rem !important;
+}
+
+.explore
+{
+    font-size: 2rem !important;
+    margin-bottom: 1.7rem !important;
+    
+
+}
+
+
+.hr
+{
+    margin:5rem 0 2rem 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: none;
+    border-bottom: 1px dashed white;
+}
+
+.footer-text
+{
+    font-size: 1.5rem;
+    text-align: right;
+
+}
+
+@media(max-width:600px)
+{
+    .ul{
+        margin-bottom: 5rem;
+    }
+}
+
